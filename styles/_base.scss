@@ -9,3 +9,30 @@ $grayest-blue: hsl(213, 9%, 39%);
 $grayish-blue: hsl(232, 10%, 55%);
 $gray-blue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+
+$font-barlow: 'Barlow', sans-serif;
+$font-fraunces: 'Fraunces', serif;
+$fw-600: 600;
+$fw-700: 700;
+$fw-900: 900;
+$fs-10: 10px;
+
+$mobile: 375px;
+$desktop: 1440px;
+
+
+// resets
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: $fs-10;
+}
