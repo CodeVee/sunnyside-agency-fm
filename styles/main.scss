@@ -1,6 +1,6 @@
 @use 'base' as b;
 @use 'components';
-@use 'layout';
+@use 'layout' as l;
 
 
 .header {
@@ -31,7 +31,8 @@
         &__item {
             font-family: b.$font-barlow;
             font-size: 1.8rem;
-            font-weight: 600;
+            font-weight: b.$fw-600;
+            letter-spacing: -.13px;
         }
 
         &__link {
@@ -48,7 +49,7 @@
             font-family: b.$font-fraunces;
             margin-left: 4.7rem;
             font-size: 1.5rem;
-            font-weight: 700;
+            font-weight: b.$fw-700;
             width: 14rem;
             height: 5.6rem;
             display: flex;
@@ -61,7 +62,7 @@
     &__heading {
         color: b.$white;
         font-size: 5.6rem;
-        font-weight: 900;
+        font-weight: b.$fw-900;
         letter-spacing: .875rem;
         line-height: 6.9rem;
         font-family: b.$font-fraunces;
@@ -80,4 +81,131 @@
          }
     }
     
+}
+
+.transform {
+    @include l.grid-6;
+
+    .box {
+        height: 60rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__center {
+            width: 44.5rem;
+
+            &__header {
+                font-family: b.$font-fraunces;
+                font-weight: b.$fw-900;
+                font-size: 4rem;
+                line-height: 4.932rem;
+                color: b.$deep-blue;
+                margin-bottom: 3.2rem;
+                letter-spacing: -.29px;
+            }
+
+            &__info {
+                font-family: b.$font-barlow;
+                font-weight: b.$fw-600;
+                font-size: 1.8rem;
+                line-height: 3rem;
+                color: b.$grayish-blue;
+                letter-spacing: -.13px;
+                margin-bottom: 4rem;
+            }
+
+            &__link {
+                font-family: b.$font-fraunces;
+                font-weight: 900;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+                color: b.$deep-blue;
+                text-transform: uppercase;
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+            }
+        }
+
+        &__bottom {
+            width: 33.9rem;
+            height: 14.3rem;
+            text-align: center;
+
+            &__header {
+                font-family: b.$font-fraunces;
+                font-weight: b.$fw-900;
+                font-size: 2.8rem;
+                line-height: 3.452rem;
+                margin-bottom: 3.2rem;
+                letter-spacing: -.2px;
+            }
+
+            &__info {
+                font-family: b.$font-barlow;
+                font-weight: b.$fw-600;
+                font-size: 1.6rem;
+                line-height: 2.7rem;
+                letter-spacing: -.11px;
+            }
+        }
+
+        &--1, &--4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--1 .box__center__link {
+            text-decoration-color: b.$yellow;
+        }
+
+        &--4 .box__center__link {
+            text-decoration-color: b.$soft-red;
+        }
+
+        &--5, &--6 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 5.9rem;
+        }
+
+        &--2 {
+            background-image: url(../images/desktop/image-transform.jpg);
+        }
+
+        &--3 {
+            background-image: url(../images/desktop/image-stand-out.jpg);
+        }
+
+        &--5 {
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+
+            .box__bottom {
+    
+                &__header {
+                    color: b.$cyan;
+                }
+    
+                &__info {
+                    color: b.$dark-cyan;
+                }
+            }
+        }
+
+        &--6 {
+            background-image: url(../images/desktop/image-photography.jpg);
+
+            .box__bottom {
+    
+                &__header {
+                    color: #052C3B;
+                    opacity: .75;
+                }
+    
+                &__info {
+                    color: b.$dark-blue;
+                }
+            }
+        }
+    }
 }
