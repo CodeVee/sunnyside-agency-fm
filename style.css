@@ -59,6 +59,10 @@ body, html {
   align-items: center;
   line-height: 2.5rem;
 }
+.header .nav__btn:hover {
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(195deg, 54%, 64%);
+}
 .header__heading {
   color: hsl(0deg, 0%, 100%);
   font-size: 5.6rem;
@@ -267,4 +271,54 @@ body, html {
 }
 .gallery .square--4 {
   background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.footer {
+  height: 35rem;
+  background-color: hsl(168deg, 44%, 70%);
+  padding-top: 7.2rem;
+}
+.footer .wrapper {
+  width: 30rem;
+  height: 20.6rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer__list--social {
+  width: 16.4rem;
+}
+.footer__item {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.13px;
+  line-height: 2.5rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: hsl(168deg, 34%, 41%);
+}
+.footer__link .img {
+  height: 2rem;
+}
+.footer__link .img--white {
+  display: none;
+}
+.footer__link:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+.footer__link:hover .img--white {
+  display: block;
+}
+.footer__link:hover .img--green {
+  display: none;
 }
