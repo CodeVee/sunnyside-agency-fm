@@ -8,10 +8,11 @@
     background-size: cover;
     background-position-y: bottom;
     height: 80rem;
-    padding: {
-        top: 3.4rem;
-        left: 4rem;
-        right: 4.8rem;
+    padding-top: 3.4rem;
+
+    &__logo {
+        width: 17rem;
+        height: 3.3rem;
     }
 
     .nav {
@@ -19,6 +20,10 @@
         display: flex;
         align-items: center;
         margin-bottom: 10.5rem;
+        padding: {
+            left: 4rem;
+            right: 4.8rem;
+        }
 
         &__list {
             margin-left: auto;
@@ -81,7 +86,7 @@
         font-size: 5.6rem;
         font-weight: b.$fw-900;
         letter-spacing: .875rem;
-        line-height: 6.9rem;
+        line-height: 6.905rem;
         font-family: b.$font-fraunces;
         text-align: center;
         text-transform: uppercase;
@@ -91,11 +96,6 @@
     &__img {
         display: flex;
         justify-content: center;
-
-         img {
-             width: 3rem;
-             height: 10.7rem;
-         }
     }
     
 }
@@ -137,8 +137,27 @@
                 letter-spacing: 1px;
                 color: b.$deep-blue;
                 text-transform: uppercase;
-                text-decoration: underline;
-                text-decoration-thickness: 2px;
+                text-decoration: none;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    height: 1rem;
+                    width: 100%;
+                    border-radius: .5rem;
+                    bottom: -.2rem;
+                    left: 0;
+                    z-index: -1;
+                    opacity: .25;
+                    transition: opacity 0.25s ease-in;
+                    
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
             }
         }
 
@@ -154,6 +173,7 @@
                 line-height: 3.452rem;
                 margin-bottom: 3.2rem;
                 letter-spacing: -.2px;
+                text-transform: capitalize;
             }
 
             &__info {
@@ -165,18 +185,22 @@
             }
         }
 
-        &--1, &--4 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        &--1 {
+            padding-top: 15.8rem;
+            padding-left: 16.5rem;
+
+            .box__center__link::after {
+                background: b.$yellow;
+            }
         }
 
-        &--1 .box__center__link {
-            text-decoration-color: b.$yellow;
-        }
+        &--4 {
+            padding-top: 15.7rem;
+            padding-left: 11rem;
 
-        &--4 .box__center__link {
-            text-decoration-color: b.$soft-red;
+            .box__center__link::after {
+                background: b.$soft-red;
+            }
         }
 
         &--5, &--6 {
@@ -204,7 +228,7 @@
                 }
     
                 &__info {
-                    color: b.$dark-cyan;
+                    color: b.$cyan;
                 }
             }
         }
@@ -263,7 +287,7 @@
         }
 
         &__info {
-            margin: 5.8rem 0 6.9rem;
+            margin: 5.8rem 0 7rem;
             font-family: b.$font-barlow;
             font-weight: b.$fw-600;
             font-size: 1.8rem;
@@ -284,6 +308,7 @@
             font-size: 1.8rem;
             line-height: 2.219rem;
             letter-spacing: -0.13px;
+            margin-bottom: 1rem;
         }
 
         &__position {
@@ -387,21 +412,29 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 
     .header {
         background-image: url('../images/mobile/image-header.jpg');
         height: 53.8rem;
         padding: {
             top: 3.2rem;
-            left: 2.4rem;
-            right: 2.4rem;
         }
+
+        &__logo {
+            width: 12.36rem;
+            height: 2.4rem;
+        }
+
     
         .nav {
             height: 2.4rem;
             margin-bottom: 8.8rem;
             position: relative;
+            padding: {
+                left: 2.4rem;
+                right: 2.4rem;
+            }
     
             &__list {
                 display: none;
@@ -415,6 +448,12 @@
                 display: block;
                 margin-left: auto;
                 cursor: pointer;
+
+                img {
+                    height: 2.4rem;
+                    width: 2.4rem;
+                }
+                
             }
 
             &__check:checked + .nav__mobile {
@@ -551,7 +590,6 @@
         .wrapper {
             width: auto;
             align-self: flex-start;
-            @include l.grid-3;
         }
     
         .testimonial {
@@ -567,8 +605,6 @@
     }
     
     .gallery {
-        @include l.grid-4;
-    
         .square {
             height: 18.8rem;
     
