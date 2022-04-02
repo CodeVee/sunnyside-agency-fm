@@ -209,3 +209,73 @@
         }
     }
 }
+
+.testimonials {
+    padding: 16rem 0;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        color: b.$gray-blue;
+        font-weight: b.$fw-900;
+        font-family: b.$font-fraunces;
+        font-size: 2rem;
+        line-height: 2.466rem;
+        letter-spacing: .5rem;
+        text-align: center;
+        margin-bottom: 8.1rem;
+        text-transform: uppercase;
+    }
+
+    .wrapper {
+        width: 111rem;
+        align-self: center;
+        @include l.grid-3;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__avatar {
+            width: 7.2rem;
+            height: 7.2rem;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+        &__info {
+            margin: 5.8rem 0 6.9rem;
+            font-family: b.$font-barlow;
+            font-weight: b.$fw-600;
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            letter-spacing: -0.13px;
+            color: b.$grayest-blue;
+        }
+
+        &__profile {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__name {
+            color: b.$deep-blue;
+            font-family: b.$font-fraunces;
+            font-weight: b.$fw-900;
+            font-size: 1.8rem;
+            line-height: 2.219rem;
+            letter-spacing: -0.13px;
+        }
+
+        &__position {
+            font-family: b.$font-barlow;
+            font-weight: b.$fw-600;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            letter-spacing: -0.1px;
+            color: b.$gray-blue;
+        }
+    }
+}
