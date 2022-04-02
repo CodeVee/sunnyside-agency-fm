@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 10px;
+}
+
+.header {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+  height: 80rem;
+  padding-top: 3.4rem;
+  padding-left: 4rem;
+  padding-right: 4.8rem;
+}
+.header .nav {
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10.5rem;
+}
+.header .nav__list {
+  margin-left: auto;
+  list-style-type: none;
+  width: 28.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav__item {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.header .nav__link {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}
+.header .nav__btn {
+  text-decoration: none;
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(212deg, 27%, 19%);
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  margin-left: 4.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 14rem;
+  height: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5rem;
+}
+.header__heading {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 5.6rem;
+  font-weight: 900;
+  letter-spacing: 0.875rem;
+  line-height: 6.9rem;
+  font-family: "Fraunces", serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+}
+.header__img {
+  display: flex;
+  justify-content: center;
+}
+.header__img img {
+  width: 3rem;
+  height: 10.7rem;
+}
