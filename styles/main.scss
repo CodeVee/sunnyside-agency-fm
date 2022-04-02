@@ -62,6 +62,10 @@
                 background: b.$light-blue;
             }
         }
+
+        &__hamburger {
+            display: none;
+        }
     }
 
     &__heading {
@@ -372,5 +376,158 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .header {
+        background-image: url('../images/mobile/image-header.jpg');
+        height: 53.8rem;
+        padding: {
+            top: 3.2rem;
+            left: 2.4rem;
+            right: 2.4rem;
+        }
+    
+        .nav {
+            height: 2.4rem;
+            margin-bottom: 8.8rem;
+    
+            &__list {
+                display: none;
+            }
+    
+            &__btn {
+                display: none;
+            }
+
+            &__hamburger {
+                display: block;
+                margin-left: auto;
+                cursor: pointer;
+            }
+        }
+    
+        &__heading {
+            font-size: 4rem;
+            letter-spacing: .625rem;
+            line-height: 4.932rem;
+            margin-bottom: 5.2rem;
+        }
+        
+    }
+    
+    .transform {
+        .box {
+            height: auto;
+            &__center {
+                width: 100%;
+                text-align: center;
+                height: 30.9rem;
+    
+                &__header {
+                    font-size: 3.2rem;
+                    line-height: 3.946rem;
+                    margin-bottom: 2.4rem;
+                    letter-spacing: -.23px;
+                }
+    
+                &__info {
+                    margin-bottom: 3.2rem;
+                }
+            }
+    
+            &__bottom {
+                width: 32.7rem;
+    
+                &__header {
+                    margin-bottom: 2.7rem;
+                }
+            }
+    
+            &--1, &--4 {
+                padding: 6.4rem 2.4rem;
+            }
+    
+            &--5, &--6 {
+                height: 60rem;
+            }
+    
+            &--2 {
+                height: 31.2rem;
+                background-image: url(../images/mobile/image-transform.jpg);
+                grid-row: 1 / 2;
+            }
+    
+            &--3 {
+                height: 31.2rem;
+                background-image: url(../images/mobile/image-stand-out.jpg);
+            }
+    
+            &--5 {
+                background-image: url(../images/mobile/image-graphic-design.jpg);
+            }
+    
+            &--6 {
+                background-image: url(../images/mobile/image-photography.jpg);
+            }
+        }
+    }
+    
+    .testimonials {
+        padding: 6.4rem 2.4rem 8.6rem;
+    
+        &__heading {
+            font-size: 1.6rem;
+            line-height: 1.973rem;
+            letter-spacing: .4rem;
+            margin-bottom: 6.4rem;
+        }
+    
+        .wrapper {
+            width: auto;
+            align-self: flex-start;
+            @include l.grid-3;
+        }
+    
+        .testimonial {
+
+            &:not(:last-of-type) {
+                margin-bottom: 6.4rem;
+            }
+    
+            &__info {
+                margin: 3.2rem 0;
+            }
+        }
+    }
+    
+    .gallery {
+        @include l.grid-4;
+    
+        .square {
+            height: 18.8rem;
+    
+            &--1 {
+                background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+            }
+    
+            &--2 {
+                background-image: url(../images/mobile/image-gallery-orange.jpg);
+            }
+    
+            &--3 {
+                background-image: url(../images/mobile/image-gallery-cone.jpg);
+            }
+    
+            &--4 {
+                background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+            }
+        }
+    }
+    
+    .footer {
+        padding-top: 6.4rem;
     }
 }
