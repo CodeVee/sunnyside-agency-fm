@@ -66,6 +66,14 @@
         &__hamburger {
             display: none;
         }
+
+        &__check {
+            display: none;
+        }
+
+        &__mobile {
+            display: none;
+        }
     }
 
     &__heading {
@@ -393,6 +401,7 @@
         .nav {
             height: 2.4rem;
             margin-bottom: 8.8rem;
+            position: relative;
     
             &__list {
                 display: none;
@@ -406,6 +415,60 @@
                 display: block;
                 margin-left: auto;
                 cursor: pointer;
+            }
+
+            &__check:checked + .nav__mobile {
+                display: flex;
+            }
+
+            &__mobile {
+                height: 30.5rem;
+                width: 32.9rem;
+                margin: 0 auto;
+                background: b.$white;
+                position: absolute;
+                top: 10.7rem;
+                padding: 3.8rem 0;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .pointer {
+                    position: absolute;
+                    top: -2.5rem;
+                    right: 0;
+                    border-left: 2.5rem solid transparent;
+                    border-right: 2.5rem solid b.$white;
+                    border-bottom: 2.5rem solid transparent;
+                    border-top: 2.5rem solid transparent;
+                }
+
+                &__link {
+                    text-decoration: none;
+                    color: b.$grayish-blue; 
+                    font-family: b.$font-barlow;
+                    font-size: 2rem;
+                    font-weight: b.$fw-600;
+                    letter-spacing: -.14px;
+                    line-height: 2.5rem;
+
+                    &--btn {
+                        background: b.$yellow;
+                        color: b.$deep-blue;
+                        border-radius: 3rem;
+                        text-transform: uppercase;
+                        font-family: b.$font-fraunces;
+                        font-size: 1.5rem;
+                        font-weight: b.$fw-700;
+                        width: 14rem;
+                        height: 5.6rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: 2.5rem;
+                        letter-spacing: -0.11px;
+                    }
+                }
             }
         }
     

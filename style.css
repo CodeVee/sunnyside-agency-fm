@@ -66,6 +66,12 @@ body, html {
 .header .nav__hamburger {
   display: none;
 }
+.header .nav__check {
+  display: none;
+}
+.header .nav__mobile {
+  display: none;
+}
 .header__heading {
   color: hsl(0deg, 0%, 100%);
   font-size: 5.6rem;
@@ -352,6 +358,7 @@ body, html {
   .header .nav {
     height: 2.4rem;
     margin-bottom: 8.8rem;
+    position: relative;
   }
   .header .nav__list {
     display: none;
@@ -363,6 +370,55 @@ body, html {
     display: block;
     margin-left: auto;
     cursor: pointer;
+  }
+  .header .nav__check:checked + .nav__mobile {
+    display: flex;
+  }
+  .header .nav__mobile {
+    height: 30.5rem;
+    width: 32.9rem;
+    margin: 0 auto;
+    background: hsl(0deg, 0%, 100%);
+    position: absolute;
+    top: 10.7rem;
+    padding: 3.8rem 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .nav__mobile .pointer {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    border-left: 2.5rem solid transparent;
+    border-right: 2.5rem solid hsl(0deg, 0%, 100%);
+    border-bottom: 2.5rem solid transparent;
+    border-top: 2.5rem solid transparent;
+  }
+  .header .nav__mobile__link {
+    text-decoration: none;
+    color: hsl(232deg, 10%, 55%);
+    font-family: "Barlow", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.14px;
+    line-height: 2.5rem;
+  }
+  .header .nav__mobile__link--btn {
+    background: hsl(51deg, 100%, 49%);
+    color: hsl(212deg, 27%, 19%);
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 14rem;
+    height: 5.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+    letter-spacing: -0.11px;
   }
   .header__heading {
     font-size: 4rem;
