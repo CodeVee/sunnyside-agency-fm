@@ -360,8 +360,13 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
+    }
+
+    &__logo {
+        width: 17rem;
+        height: 3.3rem;
+        margin-bottom: 4rem;
     }
 
     &__list {
@@ -372,6 +377,7 @@
 
         &--social {
             width: 16.4rem;
+            margin-top: 8.8rem;
         }
     }
 

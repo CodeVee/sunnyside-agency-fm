@@ -329,8 +329,12 @@ body, html {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+}
+.footer__logo {
+  width: 17rem;
+  height: 3.3rem;
+  margin-bottom: 4rem;
 }
 .footer__list {
   list-style-type: none;
@@ -340,6 +344,7 @@ body, html {
 }
 .footer__list--social {
   width: 16.4rem;
+  margin-top: 8.8rem;
 }
 .footer__item {
   font-family: "Barlow", sans-serif;
