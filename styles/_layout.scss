@@ -1,0 +1,28 @@
+
+@mixin grid-6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 375px ) {
+        grid-template-columns: 1fr;
+    }
+}
+
+@mixin grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+
+    @media screen and (max-width: 375px ) {
+        grid-template-columns: 1fr;
+    }
+}
+
+@mixin grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media screen and (max-width: 375px ) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

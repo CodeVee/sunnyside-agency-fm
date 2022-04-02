@@ -9,49 +9,161 @@
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
+  <header class="header">
+    <nav class="nav">
+      <img class="header__logo" src="./images/logo.svg" alt="logo">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Projects</a>
+        </li>
+      </ul>
+      <a href="#" class="nav__btn">Contact</a>
+      <label for="hamburger" class="nav__hamburger">
+        <img src="./images/icon-hamburger.svg" alt="hamburger" >
+      </label>
+      <input type="checkbox" name="hamburger" id="hamburger" class="nav__check">
+      <div class="nav__mobile">
+        <div class="pointer"></div>
+        <a href="#" class="nav__mobile__link">About</a>
+        <a href="#" class="nav__mobile__link">Services</a>
+        <a href="#" class="nav__mobile__link">Projects</a>
+        <a href="#" class="nav__mobile__link nav__mobile__link--btn">Contact</a>
+      </div>
+    </nav>
+    <h1 class="header__heading">We are creatives</h1>
+    <div class="header__img">
+      <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="">
+    </div>
+  </header>
+  <section class="transform">
+    <div class="box box--1">
+      <div class="box__center">
+        <h2 class="box__center__header">Transform your brand</h2>
+        <p class="box__center__info">
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#" class="box__center__link">Learn more</a>
+      </div>
+    </div>
+    <div class="box box--2"></div>
+    <div class="box box--3"></div>
+    <div class="box box--4">
+      <div class="box__center">
+        <h2 class="box__center__header">Stand out to the right audience</h2>
+        <p class="box__center__info">
+          Using a collaborative formula of designers, researchers, photographers, videographers, 
+          and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <a href="#" class="box__center__link">Learn more</a>
+      </div>
+    </div>
+    <div class="box box--5">
+      <div class="box__bottom">
+        <h3 class="box__bottom__header">Graphic design</h3>
+        <p class="box__bottom__info">
+          Great design makes you memorable. 
+          We deliver artwork that underscores your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+    </div>
+    <div class="box box--6">
+      <div class="box__bottom">
+        <h3 class="box__bottom__header">Photography</h3>
+        <p class="box__bottom__info">
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p> 
+      </div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h3 class="testimonials__heading">Client testimonials</h3>
+    <div class="wrapper">
+      <div class="testimonial testimonial--1">
+        <img src="./images/image-emily.jpg" alt="emily" class="testimonial__avatar">
+        <p class="testimonial__info">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <div class="testimonial__profile">
+          <h4 class="testimonial__name">Emily R.</h4>
+          <span class="testimonial__position">Marketing Director</span>
+        </div>
+      </div>
+      <div class="testimonial testimonial--2">
+        <img src="./images/image-thomas.jpg" alt="emily" class="testimonial__avatar">
+        <p class="testimonial__info">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        </p>
+        <div class="testimonial__profile">
+          <h4 class="testimonial__name">Thomas S.</h4>
+          <span class="testimonial__position">Chief Operating Officer</span>
+        </div>
+      </div>
+      <div class="testimonial testimonial--3">
+        <img src="./images/image-jennie.jpg" alt="emily" class="testimonial__avatar">
+        <p class="testimonial__info">
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </p>
+        <div class="testimonial__profile">
+          <h4 class="testimonial__name">Jennie F.</h4>
+          <span class="testimonial__position">Business Owner</span>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <section class="gallery">
+    <div class="square square--1"></div>
+    <div class="square square--2"></div>
+    <div class="square square--3"></div>
+    <div class="square square--4"></div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <img src="./images/logo-green.svg" alt="logo" class="footer__logo">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">About</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Services</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Projects</a>
+        </li>
+      </ul>
+      <ul class="footer__list footer__list--social">
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            <img src="./images/icon-facebook.svg" class="img img--green" alt="facebook">
+            <img src="./images/icon-facebook-white.svg" class="img img--white" alt="facebook">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            <img src="./images/icon-instagram.svg" class="img img--green" alt="instagram">
+            <img src="./images/icon-instagram-white.svg" class="img img--white" alt="instagram">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            <img src="./images/icon-twitter.svg" class="img img--green" alt="twitter">
+            <img src="./images/icon-twitter-white.svg" class="img img--white" alt="twitter">
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            <img src="./images/icon-pinterest.svg" class="img img--green" alt="twitter">
+            <img src="./images/icon-pinterest-white.svg" class="img img--white" alt="twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
