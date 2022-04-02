@@ -245,3 +245,26 @@ body, html {
   letter-spacing: -0.1px;
   color: hsl(210deg, 4%, 67%);
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.gallery .square {
+  height: 44.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .square--1 {
+  background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+}
+.gallery .square--2 {
+  background-image: url(../images/desktop/image-gallery-orange.jpg);
+}
+.gallery .square--3 {
+  background-image: url(../images/desktop/image-gallery-cone.jpg);
+}
+.gallery .square--4 {
+  background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+}

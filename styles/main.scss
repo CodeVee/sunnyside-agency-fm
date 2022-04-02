@@ -279,3 +279,30 @@
         }
     }
 }
+
+.gallery {
+    @include l.grid-4;
+
+    .square {
+        height: 44.7rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--1 {
+            background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+        }
+
+        &--2 {
+            background-image: url(../images/desktop/image-gallery-orange.jpg);
+        }
+
+        &--3 {
+            background-image: url(../images/desktop/image-gallery-cone.jpg);
+        }
+
+        &--4 {
+            background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+        }
+    }
+}
